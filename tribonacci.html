@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function tribonacci(signature, n) {
+			let starPoint = 0;
+			if (n < signature.length) {
+				return console.log(signature.slice(0, n));
+			}else {
+				for (let i = signature.length; i < n; i++){
+					signature[i] = signature[starPoint] + signature[starPoint+1] + signature[starPoint+2];
+					starPoint++
+					
+				}
+			}
+			return console.log(signature)
+		};
+		tribonacci([0, 0, 1], 10)
+	</script>
+</head>
+<body>
+
+</body>
+</html>

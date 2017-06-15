@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		 function spinWord(str) {
+        let reg = /\s/g;
+        let strArr = str.split(reg);
+        for(let i = 0; i < strArr.length; i++) {
+          if(strArr[i].length > 5) {
+            let strFive = strArr[i].split('').reverse().join('')
+            strArr[i]= strFive
+          }
+        }
+        return console.log(strArr.join(' '))
+      }
+      spinWord("li fsd")
+	</script>
+</head>
+<body>
+
+</body>
+</html>
